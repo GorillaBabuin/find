@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		.bg {
+			background-image: url(secret.png);
+			background-size: 100% 100%;
+		}
+		.win {
+			background-image: url(win.jpg);
+        	height: 1000px;
+        	width: 2000px;
+        	display: none;
+        	position: absolute;
+        	background-size: 100% 100%;
+		}
+		.all{
+
+		}
+		.one{
+			background-image: url(1.png);
+			background-size: 100% 100%;
+			height: 85px;
+		}
+		.two{
+			background-image: url(2.png);
+			background-size: 100% 100%;
+		}
+		.three{
+			background-image: url(3.png);
+			background-size: 100% 100%;
+		}
+		.four{
+			background-image: url(4.png);
+			background-size: 100% 100%;
+		}
+		.five{
+			background-image: url(5.png);
+			background-size: 100% 100%;
+		}
+		.six{
+			background-image: url(6.png);
+			background-size: 100% 100%;
+		}
+		.tuda{
+			background-image: url(tuda.png);
+			background-size: 100% 100%;
+		}
+		.a{
+			background-image: url(a.png);
+			background-size: 100% 100%;
+			height: 85px;
+		}
+		.b{
+			background-image: url(b.png);
+			background-size: 100% 100%;
+			height: 85px;
+		}
+		.c{
+			background-image: url(c.png);
+			background-size: 100% 100%;
+			height: 85px;
+		}
+		.d{
+			background-image: url(d.png);
+			background-size: 100% 100%;
+			height: 85px;
+		}
+		.e{
+			background-image: url(e.png);
+			background-size: 100% 100%;
+			height: 85px;
+		}
+		.f{
+			background-image: url(f.png);
+			background-size: 100% 100%;
+			height: 85px;
+		}
+		.death{
+			background-image: url(d1.png);
+        	height: 500px;
+        	width: 400px;
+        	display: none;
+        	position: absolute;
+        	background-size: 100% 100%;
+		}
+	</style>
+</head>
+<body style="background-image: url(bg.png);">
+	<!-- это div-родитель -->
+	<div class="col-7 mx-auto all">
+		<div>
+			<h1 style="color: black;" class="task">Найди спрятанные пикаппы. Попробуй собрать 6 баллов</h1>
+			<h1 style="color: black;">Score: <span class="score">0</span></h1>
+		</div>
+		<!-- Дивы с нумерацией 1, 2, 3 и т.д. -->
+		<div class="row">
+			<div class="col-1 px-5 py-3 tuda  bg-warning text-center ">
+
+			</div>
+			<div class="col-1 px-5 py-3 one  bg-warning text-center ">
+
+			</div>
+			<div class="col-1 px-5 py-3 two  bg-warning text-center ">
+				
+			</div>
+			<div class="col-1 px-5 py-3 three  bg-warning text-center ">
+				
+			</div>
+			<div class="col-1 px-5 py-3 four  bg-warning text-center ">
+				
+			</div>
+			<div class="col-1 px-5 five  py-3 bg-warning text-center ">
+				
+			</div>
+			<div class="col-1 px-5 py-3 six  bg-warning text-center ">
+				
+			</div>
+		</div>
+		<!--Линия А-->
+		<div class="row">
+			<div class="a col-1 px-5 py-4 bg-warning text-center ">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg  bang">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg  coin">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg  meme">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg  treasure">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg  coin">
+				
+			</div>
+		</div>
+		<!--Линия B-->
+		<div class="row">
+			<div class="b col-1  px-5 py-4 bg-warning text-center">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg  meme">
+
+			</div>
+			<div class="col-1  px-5 py-4 bg  meme">
+			
+			</div>
+			<div class="col-1  px-5 py-4 bg  coin">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg  meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bang bg  ">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg  treasure">
+				
+			</div>
+		</div>
+		<!--Линия C-->
+		<div class="row">
+			<div class="c col-1 px-5 py-4  bg-warning text-center ">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg  bang">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg  treasure">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg  meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg  coin">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg  meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg  meme">
+				
+			</div>	
+		</div>
+		<!--Линия D-->
+		<div class="row">
+			<div class="d col-1 px-5 py-4  bg-warning text-center ">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg  coin">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg meme ">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg treasure">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg meme">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg  bang">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg  meme">
+				
+			</div>
+		</div>
+		<!--Линия E-->
+		<div class="row">
+			<div class="e col-1 px-5 py-4  bg-warning text-center ">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg  treasure">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg  coin">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg  bang">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg  meme">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg  meme ">
+				
+			</div>
+		</div>
+		<!--Линия F-->
+		<div class="row">
+			<div class="f col-1 px-5 py-4 bg-warning text-center ">
+			
+			</div>
+			<div class="col-1 px-5 py-4 bg  meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg  treasure">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg  meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg  coin">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg  bang">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg  meme">
+				
+			</div>
+		</div>
+
+	</div>
+	<div class="win"></div>
+	<div class="death"></div>
+	<script type="text/javascript">
+	let score = 0
+	let bang = document.querySelectorAll(".bang")
+	let coin = document.querySelectorAll(".coin")
+	let meme = document.querySelectorAll(".meme")
+	let treasure = document.querySelectorAll(".treasure")
+    let bg = document.querySelectorAll(".bg")
+
+	for(let i=0; i<6; i=i+1){
+        bang[i].onclick = function(){
+         score = score - 1
+         document.querySelector('.score').innerHTML = score;
+    	 bang[i].style.background = 'red'
+    	 bang[i].style.backgroundImage = 'url(bang1.png)'
+    	 bang[i].style.backgroundSize = '100% 100%'
+    	 if(score==-2){
+		   document.querySelector('.all').style.display = 'none';
+		   document.querySelector('.death').style.display = 'block';
+	    }
+        }
+    }
+	for(let i=0; i<7; i=i+1){
+        coin[i].onclick = function(){
+         score = score + 1
+         document.querySelector('.score').innerHTML = score;
+    	 coin[i].style.background = 'green'
+    	 coin[i].style.backgroundImage = 'url(coin1.png)'
+    	 coin[i].style.backgroundSize = '100% 100%'
+    	 if(score==6){
+		   document.querySelector('.win').style.display = 'block';
+		   document.querySelector('.all').style.display = 'none';
+	    }
+        }
+    }
+    for(let i=0; i<17; i=i+1){
+        meme[i].onclick = function(){
+         score = score + 0
+         document.querySelector('.score').innerHTML = score;
+    	 meme[i].style.background = 'white'
+    	 meme[i].style.backgroundImage = 'url(netu.png)'
+    	 meme[i].style.backgroundSize = '100% 100%'
+        }
+    }
+    for(let i=0; i<6; i=i+1){
+        treasure[i].onclick = function(){
+         score = score + 1
+         document.querySelector('.score').innerHTML = score;
+    	 treasure[i].style.background = 'yellow'
+    	 treasure[i].style.backgroundImage = 'url(treasure1.png)'
+    	 treasure[i].style.backgroundSize = '100% 100%'
+    	 if(score==6){
+		   document.querySelector('.win').style.display = 'block';
+		   document.querySelector('.all').style.display = 'none';
+	    }
+        }
+    }	
+		
+	</script>
+</body>
+</html>
+
+<script type="text/javascript">
+
+	
+
+</script>
